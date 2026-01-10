@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  padding: 20px;
+}
+
+h1 { text-align: center; }
+
+.container {
+  background: #fff;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+input, select, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover { background: #0056b3; }
+
+/* Ticket base */
+.ticket {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-left: 6px solid #007bff; /* default blue */
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+/* PRIORITY BORDER COLORS */
+.priority-low { border-left-color: green !important; }
+.priority-medium { border-left-color: orange !important; }
+.priority-high { border-left-color: red !important; }
+
+.buttons button { margin-top: 8px; margin-right: 5px; }
+.buttons button.delete { background: #dc3545; color: #fff; }
