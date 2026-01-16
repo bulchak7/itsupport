@@ -53,12 +53,10 @@ document.addEventListener("DOMContentLoaded", function() {
       const div = document.createElement("div");
       div.classList.add("ticket");
 
-      // Add priority class
       if (ticket.priority === "Low") div.classList.add("priority-low");
       if (ticket.priority === "Medium") div.classList.add("priority-medium");
       if (ticket.priority === "High") div.classList.add("priority-high");
 
-      // Status badge
       let statusClass = ticket.status === "Open" ? "open" :
                         ticket.status === "In Progress" ? "inprogress" : "resolved";
 
@@ -108,9 +106,9 @@ document.addEventListener("DOMContentLoaded", function() {
     renderTickets();
   }
 
-  // Filters
   filterPriority.addEventListener("change", renderTickets);
   filterStatus.addEventListener("change", renderTickets);
 
   renderTickets();
 });
+
