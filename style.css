@@ -38,12 +38,10 @@ button:hover { background: #0056b3; }
   position: relative;
 }
 
-/* PRIORITY BORDER COLORS */
 .priority-low { border-left-color: green !important; }
 .priority-medium { border-left-color: orange !important; }
 .priority-high { border-left-color: red !important; }
 
-/* STATUS BADGES */
 .status-badge {
   padding: 3px 8px;
   border-radius: 12px;
@@ -60,8 +58,8 @@ button:hover { background: #0056b3; }
 .buttons button { margin-top: 8px; margin-right: 5px; }
 .buttons button.delete { background: #dc3545; color: #fff; }
 
-/* Responsive */
 @media (max-width: 600px) {
   .ticket { font-size: 0.9em; }
   button { font-size: 0.9em; }
 }
+
